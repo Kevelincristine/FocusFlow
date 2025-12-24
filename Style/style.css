@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Jersey+10&display=swap');
+:root{
+  --bg-main: #F5F3FF;
+  --bg-card: #dddcdc;
+  --text-primary: #2E2A3B;
+  --text-inverse: #FFFFFF;
+  --accent: #7C6AE6;
+  --accent-hover: #5A4FCF;
+
+  --main-font:Arial, Helvetica, sans-serif;
+  --accent-font: "Jersey 10", sans-serif;
+    
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--main-font);
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  
+}
+header{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent);
+  color: var(--text-inverse);
+ 
+  
+  
+}
+header h1 {
+  font-family: var(--accent-font);
+  font-weight: normal;
+  font-size: 4em;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.363);
+}
+ header #menu {
+   list-style: none;
+   display: flex;
+   gap: 10PX;
+ }
+ header #menu a{
+  background-color: var(--bg-card);
+  color: var(--accent);
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bolder;
+  box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.363);
+  transition: background-color 0.3s, color 0.3s;
+ 
+ 
+ }
+  header #menu a:hover{
+    background-color: var(--bg-main);
+    color: var(--accent-hover);
+   
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto 90vw auto;
+   
+  }
+  section{
+    grid-column: 2;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--bg-main);
+    min-height: 40vh;
+  }
+  main #main-container{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+  }
+  footer{
+    background-color: var(--accent);
+    grid-column: 2;
+    padding: 10px;
+    text-align: center;
+  }
+  footer h2 {
+  
+  font-family: var(--accent-font);
+  font-weight: normal;
+  font-size: 2em;
+  
+  color: var(--text-inverse);
+}
+footer a {
+  text-decoration: none;
+  color: var(--text-inverse);
+}
+footer a:hover{
+  color: var(--text-primary);
+  background-color: var(--accent-hover);
+}
+  
+ @media screen and ( min-width: 768px){
+  header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+  }
+  
+  header #menu a {
+    margin: 0px;
+    margin-right: 10px;
+  }
+  header h1 {
+    margin-left: 10px;
+  }
+  main #main-container{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: center;
+
+    
+  } 
+ 
+  
+ }

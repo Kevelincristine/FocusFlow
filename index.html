@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow</title>
+    <link rel="shortcut icon" href="IMG/Icon-app.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/604d92873c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1> FocusFlow</h1>
+    <nav id="nav">
+        <a href="#" class="link"><i class="fa-solid fa-house"></i></a>
+        <a href="#" class="link"><i class="fa-solid fa-clock"></i></a>
+        <a href="#" class="link"><i class="fa-solid fa-sitemap"></i></a>
+
+    </nav>
+    </header>
+    <main>
+   <section id="about">
+    <p><strong>FocusFlow</strong> is a <strong>simple and effective productivity</strong> app designed to help you organize your tasks and stay focused.
+    Start by adding your tasks to the to-do list. Choose one task, start the Pomodoro timer, and work with full focus for 25 minutes.
+    After each focus session, take a short break and then continue with the next task. This method helps reduce distractions, improve concentration, and make your work more manageable.
+    FocusFlow is ideal for studying, working, or planning your day in a calm and organized way.</p>
+
+   </section>
+   <section id="main-container">
+    <article id="to-doList">
+   <h2> To-Do List</h2>
+   <form id="todo-form">
+    <input type="text"
+     id="todo-input" 
+     placeholder="ADD a new task..."
+    aria-label="add a new task"
+    required
+    >
+    <button type="submit">ADD</button>
+   </form>
+   <ul id="todo-list">
+    <!-- tasks will appear here -->
+   </ul>
+    </article>
+    <article id="pomodoro">
+        <h2> Pomodoro Timer</h2>
+        <p> Focus for 25 minutes, then take a short break.</p>
+        <div id="timer">
+            <span id="minutes">25</span>:
+            <span id="secunds">00</span>
+        </div>
+        <div class="pomoro-buttons">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+
+    </article>
+   </section>
+    </main>
+    <footer id="my-github">
+     <h2> Hi, I'm Kevelin.</h2>
+      <p>
+         If you enjoyed using FocusFlow, feel free to explore my other projects on<a href="https://github.com/Kevelincristine" target="_blank"> GitHub</a>.
+         I’m always working on new ideas and improving my front-end skills.
+      </p>
+     
+    </footer>
+</body>
+</html>

@@ -48,7 +48,7 @@ header h1 {
    gap: 10PX;
  }
  header #menu a{
-  background-color: var(--bg-card);
+  background-color: var(--bg-main);
   color: var(--accent);
   padding: 5px;
   margin-bottom: 10px;
@@ -61,8 +61,9 @@ header h1 {
  
  }
   header #menu a:hover{
-    background-color: var(--bg-main);
-    color: var(--accent-hover);
+    background-color: var(--accent-hover);
+    color: var(--text-inverse);
+    
    
   }
   main {
@@ -93,11 +94,14 @@ header h1 {
   main #about p{
     margin-bottom: 50px;
     cursor: pointer;
+    background-color: var(--bg-main);
+    padding: 10px;
+    border-radius: 10px;
    
   }
   main #about img {
-    width:200px;
-    height:200px;
+    width:50vw;
+    height:40vh;
     border-radius: 50%;
     border: 5px solid var(--bg-card);
     outline: 3px solid var(--accent);
@@ -116,6 +120,7 @@ header h1 {
     flex-direction: column ;
     justify-content: space-around;
     border-radius: 5px;
+    gap: 20px;
   }
   section #to-doList {
     display: flex;
@@ -155,6 +160,7 @@ header h1 {
   
   section #to-doList button:hover {
       background-color: var(--accent);
+    
      
     }
   section #pomodoro{
@@ -237,7 +243,8 @@ footer a:hover{
     width: 50vw;
   }
   main #about img {
-    width: 20vw;
+    width: 30vw;
+    height: 50vh;
    
   }
   main #main-container{

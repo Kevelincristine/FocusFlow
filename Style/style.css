@@ -6,6 +6,7 @@
   --text-inverse: #FFFFFF;
   --accent: #7C6AE6;
   --accent-hover: #5A4FCF;
+  --remove-button: #ff4d4d;
 
   --main-font:Arial, Helvetica, sans-serif;
   --accent-font: "Jersey 10", sans-serif;
@@ -124,12 +125,11 @@ header h1 {
   }
   section #to-doList {
     display: flex;
-    height: 9em;
+    min-height: 9em;
     flex-direction: column;
-    flex-wrap: wrap;
-
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    padding-bottom: 20px;
    
    
   }
@@ -163,6 +163,32 @@ header h1 {
     
      
     }
+    #todo-list {
+  list-style: none;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#todo-list li {
+  background-color: var(--accent);
+  color: var(--text-inverse);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80vw;
+  max-width: 50vw;
+  word-wrap: break-word; 
+  transition: transform 0.2s;
+}
+
+#todo-list li:hover {
+  background-color: var(--remove-button);
+  transform: scale(1.02);
+}
+    
   section #pomodoro{
     display: flex;
     flex-flow: column wrap;

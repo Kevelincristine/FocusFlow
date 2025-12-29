@@ -212,6 +212,8 @@ header h1 {
     color: var(--bg-main);
     border: 1px solid var(--bg-main);
     padding: 8px;
+    min-height: 50px;
+    min-width: 60px;
     border-radius: 3px;
   }
   section #pomodoro button:hover {

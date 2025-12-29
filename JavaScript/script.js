@@ -71,4 +71,20 @@ addBtn.addEventListener("click",
 )
 
 
- 
+ const themeBtn = document.querySelector("#theme");
+const themeIcon = themeBtn.querySelector("i");
+
+themeBtn.addEventListener("click", (e) => {
+  e.preventDefault(); 
+
+  document.body.classList.toggle("dark");
+
+  
+  if (document.body.classList.contains("dark")) {
+    themeIcon.classList.remove("fa-moon");
+    themeIcon.classList.add("fa-sun");
+  } else {
+    themeIcon.classList.remove("fa-sun");
+    themeIcon.classList.add("fa-moon");
+  }
+});

@@ -12,6 +12,18 @@
   --accent-font: "Jersey 10", sans-serif;
     
 }
+body.dark {
+
+  --bg-main: #121212;      
+  --bg-card: #1E1E1E;       
+  --text-primary: #EAEAEA;  
+  --text-inverse: #121212;
+  --accent: #E8904F;    
+  --accent-hover: #C76A34; 
+  --remove-button: #FF6B6B;
+}
+
+
 *{
   padding: 0px;
   margin: 0px;
